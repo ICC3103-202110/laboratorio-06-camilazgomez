@@ -15,17 +15,13 @@ async function app(state,view,update) {
     const {source}= await getSide(state);
     const sourceModel= update_side(model,source);
     const {temperature,fromScale,toScale}= await getInputs(sourceModel);
-    //const newState= update(model,bill,percent);
+    const newState= update(sourceModel,temperature,fromScale,toScale);
     state= {
         ...state,
-        //model:newState,
-        model:sourceModel,
-        //currentView:view(newState)
-        currentView:view(model)
+        model:newState,
+        currentView:view(newState)
+        }
     }
-
-    }
-
 }
 
 module.exports={

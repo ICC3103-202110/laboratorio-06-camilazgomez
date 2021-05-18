@@ -3,10 +3,7 @@ initModel = {
     leftUnit:"Celsius",
     rightValue:32,
     rightUnit:"Fahrenheit",
-    source: true,
-    temperature:0,
-    fromScale:"Celsius",
-    toScale:"Fahrenheit"
+    source: true
 }
 
 module.exports = {

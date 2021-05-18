@@ -40,13 +40,13 @@ function getInputs(model){
                 name: 'fromScale',
                 type: 'list',
                 message: "From?",
-                choices: ["Celsius","Fahenheit","Kelvin"],
+                choices: ["Celsius","Fahrenheit","Kelvin"],
             },
             {
                 name: 'toScale',
                 type: 'list',
                 message: "To?",
-                choices: ["Celsius","Fahenheit","Kelvin"],
+                choices: ["Celsius","Fahrenheit","Kelvin"],
             }
         ])
     }   
@@ -62,13 +62,13 @@ function getInputs(model){
                 name: "fromScale",
                 type: 'list',
                 message: "From?",
-                choices: ["Celsius","Fahenheit","Kelvin"],
+                choices: ["Celsius","Fahrenheit","Kelvin"],
             },
             {
                 name: "toScale",
                 type: 'list',
                 message: "To?",
-                choices: ["Celsius","Fahenheit","Kelvin"],
+                choices: ["Celsius","Fahrenheit","Kelvin"],
             }
         ])
     }
