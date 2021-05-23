@@ -25,18 +25,18 @@ function update_side(model,newSource) {
     }
 }
 function master_of_conversion(temperature,fromScale,toScale){
-    if (fromScale=='Kelvin' && toScale=='Celsius' )  {
+    if (fromScale==='Kelvin' && toScale==='Celsius' )  {
         return conversion= Kelvin_to_Celsius(temperature);
     }
-    if (fromScale=="Kelvin" && toScale=="Fahrenheit" ) {
+    if (fromScale==="Kelvin" && toScale==="Fahrenheit" ) {
         return conversion= Kelvin_to_Fahrenheit(temperature);}
-    if (fromScale=="Fahrenheit" && toScale=="Celsius") {
+    if (fromScale==="Fahrenheit" && toScale==="Celsius") {
         return conversion= Fahrenheit_to_Celsius(temperature);}
-    if (fromScale=="Fahrenheit" && toScale=="Kelvin" ) {
+    if (fromScale==="Fahrenheit" && toScale==="Kelvin" ) {
         return conversion= Fahrenheit_to_Kelvin(temperature);}
-    if (fromScale=="Celsius" && toScale=="Kelvin" ) {
+    if (fromScale==="Celsius" && toScale==="Kelvin" ) {
         return conversion= Celsius_to_Kelvin(temperature);}
-    if (fromScale=="Celsius" && toScale=="Fahrenheit" ) {
+    if (fromScale==="Celsius" && toScale==="Fahrenheit" ) {
         return conversion= Celsius_to_Fahrenheit(temperature);}
     if (fromScale===toScale) {
         return conversion=temperature;}
